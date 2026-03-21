@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal // Terms & Privacy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .legal-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .legal-header {
+            margin-bottom: 60px;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 40px;
+        }
+
+        .legal-title {
+            font-size: 48px;
+            font-weight: 900;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
+            line-height: 0.9;
+        }
+
+        .legal-nav {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .legal-nav a {
+            color: var(--secondary-text);
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+
+        .legal-nav a:hover,
+        .legal-nav a.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+        }
+
+        .policy-section {
+            margin-bottom: 80px;
+            scroll-margin-top: 100px;
+            /* Offset for sticky nav if we had one */
+        }
+
+        .policy-block {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .block-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .block-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .block-number {
+            font-family: inherit;
+            color: var(--primary-color);
+            background: rgba(99, 102, 241, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: var(--text-color);
+            font-size: 18px;
+            margin: 30px 0 15px 0;
+        }
+
+        h3:first-of-type {
+            margin-top: 0;
+        }
+
+        p,
+        ul {
+            color: var(--secondary-text);
+            line-height: 1.7;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .update-date {
+            font-family: monospace;
+            color: var(--secondary-text);
+            font-size: 12px;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="top-nav">
+            <div class="brand">
+                <span class="brand-icon">//</span>
+                AppSupport
+            </div>
+
+            <div class="nav-pill">
+                <a href="index.html" class="nav-item">Support</a>
+                <span class="nav-item active">Terms & Privacy</span>
+            </div>
+
+            <a href="index.html" class="status-badge" style="text-decoration: none;">
+                <div class="status-dot"></div>
+                Return to Hub
+            </a>
+        </nav>
+
+        <div class="legal-container">
+            <header class="legal-header">
+                <div class="label-pill">• LEGAL • 2026</div>
+                <h1 class="legal-title">Terms &<br>Privacy.</h1>
+                <p style="color: var(--secondary-text); font-size: 18px; max-width: 500px;">
+                    Plain language policies. We keep it honest and clear — no 50-page documents, no tricks.
+                </p>
+
+                <div class="legal-nav">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Use</a>
+                </div>
+            </header>
+
+            <!-- Privacy Section -->
+            <section id="privacy" class="policy-section">
+                <h2 class="section-title">Privacy Policy <span class="update-date">Last Updated: March 2026</span></h2>
+
+                <div class="policy-block">
+                    <div class="block-header">
+                        <h3 class="block-title">01 — What We Collect</h3>
+                        <span class="block-number">DATA</span>
+                    </div>
+                    <p>We believe in data minimization. We only collect what is absolutely necessary to make the app
+                        function.</p>
+                    <ul>
+                        <li><strong>Usage Data:</strong> Anonymous analytics to help us identify crashes and improve
+                            performance properly.</li>
+                        <li><strong>Device Info:</strong> Model, OS version, and locale to ensure compatibility.</li>
+                    </ul>
+                </div>
+
+                <div class="policy-block">
+                    <div class="block-header">
+                        <h3 class="block-title">02 — What We Never Collect</h3>
+                        <span class="block-number">PRIVACY</span>
+                    </div>
+                    <p>Your private life is yours. We strictly do <strong>not</strong> collect:</p>
+                    <ul>
+                        <li>Personal Usage History (browser history, other apps).</li>
+                        <li>Location Data (GPS coordinates).</li>
+                        <li>Contacts or Photos (unless you explicitly select a photo to edit).</li>
+                        <li>Biometric Data (FaceID/TouchID data remains on your device).</li>
+                    </ul>
+                </div>
+
+                <div class="policy-block">
+                    <div class="block-header">
+                        <h3 class="block-title">03 — Third Parties</h3>
+                        <span class="block-number">SECURITY</span>
+                    </div>
+                    <p>We do not sell your data. Never have, never will.</p>
+                    <p>We may use trusted third-party services for:</p>
+                    <ul>
+                        <li><strong>Apple iCloud:</strong> To sync your data across your devices.</li>
+                        <li><strong>RevenueCat:</strong> To process subscription status (managed anonymously).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Terms Section -->
+            <section id="terms" class="policy-section">
+                <h2 class="section-title">Terms of Use <span class="update-date">Effective: January 1, 2025</span></h2>
+
+                <div class="policy-block">
+                    <div class="block-header">
+                        <h3 class="block-title">01 — Acceptance</h3>
+                        <span class="block-number">AGREEMENT</span>
+                    </div>
+                    <p>By downloading or using our apps, you automatically agree to these terms. If you don't agree with
+                        them, please delete the app.</p>
+                </div>
+
+                <div class="policy-block">
+                    <div class="block-header">
+                        <h3 class="block-title">02 — Subscriptions & Refunds</h3>
+                        <span class="block-number">PAYMENT</span>
+                    </div>
+                    <p>Subscriptions will automatically renew unless canceled at least 24 hours before the end of the
+                        current period.</p>
+                    <p><strong>Refunds:</strong> All payments are processed by Apple. We cannot issue refunds directly.
+                        Please contact Apple Support for billing issues.</p>
+                    <a href="https://support.apple.com/billing" target="_blank" class="link-green">Apple Billing Support
+                        →</a>
+                </div>
+
+                <div class="policy-block">
+                    <div class="block-header">
+                        <h3 class="block-title">03 — User Conduct</h3>
+                        <span class="block-number">RULES</span>
+                    </div>
+                    <p>You agree not to use the app for any unlawful purpose or to harass, abuse, or harm others. We
+                        reserve the right to terminate access if these terms are violated.</p>
+                </div>
+
+                <div class="policy-block">
+                    <div class="block-header">
+                        <h3 class="block-title">04 — Liability</h3>
+                        <span class="block-number">LEGAL</span>
+                    </div>
+                    <p>The app is provided "as is" without warranties of any kind. We are not liable for any damages or
+                        data loss resulting from the use of our apps.</p>
+                </div>
+            </section>
+
+        </div>
+
+        <footer>
+            <span class="mono">© 2026 All rights reserved.</span>
+            <div class="footer-nav">
+                <a href="mailto:mohamedeladnani0@gmail.com">Contact Us</a>
+                <a href="legal.html#privacy">Privacy Policy</a>
+                <a href="legal.html#terms">Terms of Use</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

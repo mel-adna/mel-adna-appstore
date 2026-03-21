@@ -1,21 +1,38 @@
-# Support Website for iOS App
+# Adnani Apps Support Hub
 
-This is a support website template designed for your iOS app, based on the clean style you requested.
+This repository hosts the support pages for all your apps.
 
-## Features
-- **Responsive Design**: Works on mobile and desktop.
-- **FAQ Section**: Expandable questions and answers.
-- **Privacy Policy & Terms**: Modal popups for easy reading without leaving the page.
-- **Contact**: Direct email link.
+## Structure
+- `index.html`: The main landing page listing all your apps.
+- `apps/template.html`: A template support page you can copy for each new app.
+- `css/style.css`: Shared styles to keep everything consistent.
+- `js/script.js`: Shared logic for interactive elements (FAQs, Modals).
+
+## How to Add a New App
+
+1.  **Create the App Page**:
+    - Go to the `apps/` folder.
+    - Copy `template.html` and rename it to your app name (e.g., `my-new-app.html`).
+    - Open the new file and replace:
+        - `<!-- APP NAME -->` with your app's name.
+        - The Privacy Policy and Terms text with your specific policies.
+
+2.  **Add to Landing Page**:
+    - Open `index.html`.
+    - Find the `<div class="app-grid">` section.
+    - Add a new "card" for your app:
+      ```html
+      <a href="apps/my-new-app.html" class="app-card">
+          <div class="app-card-title">My New App</div>
+          <div class="app-card-desc">Support & Privacy Policy</div>
+      </a>
+      ```
+
+3.  **Publish**:
+    - Commit and push your changes to GitHub.
+    - Your new support page will be at: `https://yourusername.github.io/repo-name/apps/my-new-app.html`
 
 ## Customization
-1. **App Name**: Open `index.html` and replace "Your App Name" with your actual app name (Cmd+F to find specific instances).
-2. **Icons**: The template uses emoji icons. You can replace them with SVGs or images if preferred.
-3. **Policies**: Update the text inside the "Privacy Modal" and "Terms Modal" sections in `index.html` with your legal text.
 
-## Deployment (GitHub Pages)
-1. Commit and push this repository to GitHub.
-2. Go to your repository **Settings**.
-3. Scroll down to the **Pages** section.
-4. Select `main` branch as the source and click **Save**.
-5. Your site will be live at `https://yourusername.github.io/repo-name/`.
+- **Colors**: Edit `css/style.css` and change the `--primary-color` variable.
+- **Contact Email**: Edit the `mailto:` links in `index.html` and `apps/template.html` if your email changes.

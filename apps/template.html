@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><!-- APP NAME --> // Support</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navigation -->
+        <nav class="top-nav">
+            <div class="brand">
+                <span class="brand-icon">//</span>
+                AppSupport
+            </div>
+
+            <div class="nav-pill">
+                <a href="#" class="nav-item active">Support</a>
+                <a href="#" class="nav-item" onclick="openModal('termsModal')">Terms & Privacy</a>
+            </div>
+
+            <a href="../index.html" class="status-badge" style="text-decoration: none;">
+                <div class="status-dot"></div>
+                Return to Hub
+            </a>
+        </nav>
+
+        <!-- Specific App Hero -->
+        <header class="hero-layout">
+            <div class="hero-left">
+                <div class="label-pill">• <!-- APP NAME --> • SUPPORT</div>
+                <h1>Need help<br>with<br><!-- APP NAME -->?</h1>
+
+                <p class="hero-text">
+                    We're here to help you resolve any issues with <strong><!-- APP NAME --></strong>. Real human
+                    support, always.
+                </p>
+
+                <div style="margin-top: 40px;">
+                    <a href="mailto:mohamedeladnani0@gmail.com?subject=Support Request: <!-- APP NAME -->" class="btn">✉
+                        Email Support</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="info-list">
+                    <div class="info-row-item">
+                        <span class="info-icon">📱</span>
+                        <div class="info-content">
+                            <div>App Name</div>
+                            <div><!-- APP NAME --></div>
+                        </div>
+                    </div>
+                    <div class="info-row-item">
+                        <span class="info-icon">⚡</span>
+                        <div class="info-content">
+                            <div>Response Time</div>
+                            <div class="link-primary">~24 Hours</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <div class="section-header">
+                <h2>Common Questions</h2>
+                <span class="section-tag">// <!-- APP NAME --></span>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-box">
+                    <div class="faq-title" onclick="toggleFaq(this)">
+                        How do I restore purchases?
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-content">
+                        Go to the app settings and tap "Restore Purchases". If that doesn't work, ensure you are signed
+                        in with the same Apple ID used to purchase.
+                    </div>
+                </div>
+
+                <div class="faq-box">
+                    <div class="faq-title" onclick="toggleFaq(this)">
+                        How do I cancel my subscription?
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-content">
+                        Go to iPhone Settings → Your Name → Subscriptions, find <!-- APP NAME -->, and tap Cancel
+                        Subscription.
+                    </div>
+                </div>
+
+                <div class="faq-box">
+                    <div class="faq-title" onclick="toggleFaq(this)">
+                        I found a bug, what do I do?
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-content">
+                        Please email us with a screenshot and details of what happened. We fix bugs as fast as possible!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Policies -->
+        <section style="margin-top: 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="feature-card" onclick="window.location.href='../legal.html#privacy'" style="cursor: pointer;">
+                <span class="card-icon">🔒</span>
+                <span class="card-title">Privacy Policy</span>
+                <p class="card-text">Read how we handle your data for <!-- APP NAME -->.</p>
+            </div>
+            <div class="feature-card" onclick="window.location.href='../legal.html#terms'" style="cursor: pointer;">
+                <span class="card-icon">📋</span>
+                <span class="card-title">Terms of Use</span>
+                <p class="card-text">Usage rules and liability terms.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <span class="mono">© 2026 All rights reserved.</span>
+            <div class="footer-nav">
+                <a href="mailto:mohamedeladnani0@gmail.com">Contact Us</a>
+                <a href="../legal.html#privacy">Privacy</a>
+                <a href="../legal.html#terms">Terms</a>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
